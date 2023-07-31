@@ -1,0 +1,536 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos para la página de inicio */
+  .header {
+    background-color: #f35b04; /* Naranja vibrante */
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .hero-section {
+    background-image: url('erling-action.jpg'); /* Imagen de Erling en acción en el campo */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Estilos de la barra de navegación */
+.navbar {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 15px 0; /* Espaciado interior */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-menu li {
+    margin-left: 20px;
+  }
+  
+  .navbar-menu li:first-child {
+    margin-left: 0;
+  }
+  
+  .navbar-menu li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-menu li a:hover {
+    color: #ffd700; /* Color del texto al hacer hover */
+  }
+  
+  
+  
+/* Estilos de la sección de biografía */
+.biography-content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  
+/* Estilos para las estadísticas */
+.statistics {
+    background-color: #f5f5f5; /* Gris claro */
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .statistics-table {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th,
+  td {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo de filas pares */
+  }
+  
+  tr:hover {
+    background-color: #ddd; /* Color de fondo al hacer hover en una fila */
+  }
+  
+  
+/* Estilos para la sección de galería */
+.gallery {
+    background-color: #f35b04; /* Naranja vibrante */
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .gallery h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para las imágenes de la galería */
+  .gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .gallery-item {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Estilos para el efecto de luz al hacer clic en las imágenes */
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+  }
+  
+  .lightbox img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  
+  
+  /* Estilos para el formulario de contacto */
+  .contact {
+    background-color: #333; /* Negro */
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  /* Estilos para enlaces y botones */
+  a,
+  button {
+    color: #f35b04; /* Naranja vibrante */
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  a:hover,
+  button:hover {
+    color: #c23500; /* Naranja más oscuro */
+  }
+  
+  /* Estilos para tipografía */
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Estilos para imágenes en la galería */
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para elementos gráficos que sugieran movimiento y velocidad */
+  /* Por ejemplo, líneas o formas diagonales */
+  .speed-indicator {
+    width: 100px;
+    height: 100px;
+    background-color: #f35b04; /* Naranja vibrante */
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+  }
+  
+  /* Estilos para tipografía moderna y audaz */
+  /* Por ejemplo, fuente Montserrat */
+  h1,
+  h2,
+  p {
+    font-family: 'Montserrat', Arial, sans-serif;
+    letter-spacing: 1px;
+  }
+  
+
+ /* Estilos para la sección de logros y premios */
+.achievements {
+  background-color: #f35b04; /* Amarillo vibrante */
+  color: #333;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.achievements h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Estilos para la lista de logros y premios */
+.achievements-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.achievements-list li {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.achievements-list li:hover {
+  transform: scale(1.05);
+  background-color: #fddb5a; /* Amarillo vibrante al hacer hover */
+  color: #333;
+}
+
+@media screen and (min-width: 768px) {
+  .achievements-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+}
+
+/* Estilos para la sección de entrevistas y videos */
+.interviews {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .interviews h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .interviews-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+  }
+  
+  .interview {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #444; /* Fondo oscuro para cada entrevista */
+    transition: transform 0.3s;
+  }
+  
+  .interview h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .interview p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* Aspect ratio para mantener el video en proporción 16:9 */
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .interview:hover {
+    transform: translateY(-5px);
+  }
+  
+ /* Estilos para la sección de patrocinadores y colaboraciones */
+.sponsors {
+    background-color: #fddb5a; /* Amarillo vibrante */
+    color: #333;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .sponsors h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .sponsors-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+  }
+  
+  .sponsor, .collaboration, .association {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* Fondo blanco para cada patrocinador, colaboración y asociación */
+    transition: transform 0.3s;
+  }
+  
+  .sponsor img, .collaboration img, .association img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  
+  .sponsor h3, .collaboration h3, .association h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .sponsor p, .collaboration p, .association p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .sponsor a, .collaboration a, .association a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .sponsor a:hover, .collaboration a:hover, .association a:hover {
+    background-color: #555; /* Color oscuro al hacer hover */
+  }
+  
+  .sponsor, .collaboration, .association {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sponsor:hover, .collaboration:hover, .association:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Estilos para la sección de participación en iniciativas benéficas */
+.charity {
+    background-color: #0f9d58; /* Verde vibrante */
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .charity h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .charity-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+  }
+  
+  .charity-item {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* Fondo blanco para cada iniciativa benéfica */
+    transition: transform 0.3s;
+  }
+  
+  .charity-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  
+  .charity-item h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .charity-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .charity-item a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .charity-item a:hover {
+    background-color: #555; /* Color oscuro al hacer hover */
+  }
+  
+  .charity-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .charity-item:hover {
+    transform: translateY(-5px);
+  }
+  
